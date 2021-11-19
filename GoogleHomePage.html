@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+ <nav>
+      <a href="#">Gmail</a>
+      <a href="#">Images</a>
+      <img src="img/g-menu.png">
+      <button>Sign in</button>
+ </nav>
+  
+    <section class="section-1">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" class="logo">
+    
+        <div class="s-box">
+          <img src="img/search.svg" class="search-icon">
+          <input type="text" class="s-input" id="query">
+          <img src="img/vs.png" class="vs-icon">
+          <input type="submit" class="s-btn" value="Google Search" onclick="search()">
+          <input type="submit" class="s-btn" value="I'm Feeling Lucky">
+        </div>
+      
+ 
+      <div class="lang">
+      Google is offered in: 
+            <a href="">ગુજરાતી</a>
+            <a href=>हिन्दी</a>
+            <a href=>বাংলা</a>
+            <a href=>తెలుగు</a>
+            <a href=>मराठी</a>
+            <a href=>தமிழ்</a>
+            <a href=>ಕನ್ನಡ</a>
+            <a href=>മലയാളം</a>
+            <a href=>ਪੰਜਾਬੀ</a>
+      </div>
+    </section>
+  
+        <footer>
+          <h4>India</h4>
+          <div class="links">
+            <div class="link-1">
+              <a href="#">Advertising</a>
+              <a href="#">Business</a>
+              <a href="#">About</a>
+              <a href="#">How Search works</a>
+            </div>
+            <div class="link-2">
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">Settings</a>
+            </div>
+          </div>
+        </footer>
+ </div>
+</body>
+
+<script>
+  function search() {
+    var query = document.getElementById("query").value;
+    window.open("https://www.google.com/search?q=" + query, "_blank");
+  }
+</script>
+</html>
