@@ -55,8 +55,9 @@ nav button {
 }
 .section-1 .logo {
   display: block;
-  margin: 0px auto;
+  margin: auto;
   margin-top: 107px;
+  margin-bottom: 30px;
 }
 .s-box {
   width: 580px;
